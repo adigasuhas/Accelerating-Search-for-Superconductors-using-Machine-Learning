@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-# Accelarating-Search-for-Superconductors-using-Machine-Learning
-This repository contains the data files and python code used for our project 'Accelarating-Search-for-Superconductors-using-Machine-Learning'
-=======
-
-# Accelarating-Search-for-Superconductors-using-Machine-Learning
-This repository contains the data files and python code used for our project 'Accelarating-Search-for-Superconductors-using-Machine-Learning'
-=======
 # Accelerating-Search-of-Superconductors
-=
-![Logo](Comp_SC_1.png){width = 300}
+
+<img src="Comp_SC_1.png" width="200">
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/release/python-310/)
 [![Paper](https://img.shields.io/badge/paper-arXiv-blue)](https://arxiv.org/abs/your-paper-id)
@@ -32,4 +24,3 @@ This repository contains code used for my project: *Machine Learning-based Criti
 
   ```bash
   git clone https://github.com/adigasuhas/Accelarating-Search-for-Superconductors-using-Machine-Learning.git
->>>>>>> aee7176 (Initialized the Repository)
