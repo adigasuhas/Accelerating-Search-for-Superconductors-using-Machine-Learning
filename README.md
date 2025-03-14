@@ -1,6 +1,13 @@
 # Accelerating-Search-of-Superconductors
+<<<<<<< HEAD
 
 <img src="Comp_SC_1.png" width="200">
+=======
+=
+<div align="center">
+    <img src="Comp_SC_1.png" width="250">
+</div>
+>>>>>>> e1fee79 (Updated README)
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/release/python-310/)
 [![Paper](https://img.shields.io/badge/paper-arXiv-blue)](https://arxiv.org/abs/your-paper-id)
@@ -24,3 +31,7 @@ This repository contains code used for my project: *Machine Learning-based Criti
 
   ```bash
   git clone https://github.com/adigasuhas/Accelarating-Search-for-Superconductors-using-Machine-Learning.git
+<<<<<<< HEAD
+=======
+>
+>>>>>>> e1fee79 (Updated README)
