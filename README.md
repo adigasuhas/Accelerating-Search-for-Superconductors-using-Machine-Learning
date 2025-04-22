@@ -34,7 +34,7 @@ This repository contains code used for my project: *Machine Learning-based Criti
     ```bash
     cd Accelarating-Search-for-Superconductors-using-Machine-Learning/Temp_Predictor/
 
-- Prepare the Input File
+- Preparing the Input File
 
     - Open the file named `Temp_prediction_materials.csv`.
 
@@ -53,3 +53,8 @@ This repository contains code used for my project: *Machine Learning-based Criti
     - **Temp-critical**: If known, you may enter the experimental $T_c$ here for comparison. Otherwise, you may leave it blank.
 
 
+- Generating Descriptors based on Quantum Structural Diagrams
+
+- Predicting critical temperature of materials
+
+   
