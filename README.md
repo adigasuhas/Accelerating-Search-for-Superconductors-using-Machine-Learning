@@ -28,7 +28,6 @@ This repository contains code used for my project: *Machine Learning-based Criti
   ```bash
   git clone https://github.com/adigasuhas/Accelarating-Search-for-Superconductors-using-Machine-Learning.git
 
-## Rules
 
 <div align="center">
     <img src="Chemical_Composition_Rules.png" width="850">
