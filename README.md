@@ -46,10 +46,10 @@ This repository contains code used for my project: *Machine Learning-based Criti
         <img src="Chemical_Composition_Rules.png" width="850">
     </div>
 
-        - The following columns can be handled as described:
+  - The following columns can be handled as described:
 
-          - **Material-ID**: This is for user reference and identification. It is not auto-filled by the code, so you may enter any identifier (e.g., Unique Identification number, Sample name).
+    - **Material-ID**: This is for user reference and identification. It is not auto-filled by the code, so you may enter any identifier (e.g., Unique Identification number, Sample name).
 
-          - **Temp-critical**: If known, you may enter the experimental $T_c$ here for comparison. Otherwise, you may leave it blank.
+    - **Temp-critical**: If known, you may enter the experimental $T_c$ here for comparison. Otherwise, you may leave it blank.
 
 
