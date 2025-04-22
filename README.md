@@ -31,5 +31,5 @@ This repository contains code used for my project: *Machine Learning-based Criti
 ## Rules
 
 <div align="center">
-    <img src="" width="250">
+    <img src="Chemical_Composition_Rules.png" width="850">
 </div>
