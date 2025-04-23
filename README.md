@@ -39,9 +39,9 @@ This repository contains code used for my project: *Machine Learning-based Criti
     - Open the file named `Temp_prediction_materials.csv`.
     - The following columns can be handled as described:
 
-    - **Material-ID**: This is for user reference and identification. It is not auto-filled by the code, so you may enter any identifier (e.g., Unique Identification number, Sample name).
-    - **Chemical_Formula**: Add the materials (chemical compositions) for which you wish to predict the critical temperature ($T_c$).
-    - **Temp-critical**: If known, you may enter the experimental $T_c$ here for comparison. Otherwise, you may leave it blank.
+        - **Material-ID**: This is for user reference and identification. It is not auto-filled by the code, so you may enter any identifier (e.g., Unique Identification number, Sample name).
+        - **Chemical_Formula**: Add the materials (chemical compositions) for which you wish to predict the critical temperature ($T_c$).
+        - **Temp-critical**: If known, you may enter the experimental $T_c$ here for comparison. Otherwise, you may leave it blank.
       
     - Follow the formatting rules illustrated in the reference image provided in the repository to ensure your chemical composition input is valid.
 
