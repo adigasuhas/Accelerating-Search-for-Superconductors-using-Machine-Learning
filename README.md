@@ -37,20 +37,17 @@ This repository contains code used for my project: *Machine Learning-based Criti
 - Preparing the Input File
 
     - Open the file named `Temp_prediction_materials.csv`.
+    - The following columns can be handled as described:
 
-    - Add the materials (chemical compositions) for which you wish to predict the critical temperature (Tc).
-
-    - Follow the formatting rules illustrated in the reference image provided in the repository to ensure your input is valid.
+    - **Material-ID**: This is for user reference and identification. It is not auto-filled by the code, so you may enter any identifier (e.g., Unique Identification number, Sample name).
+    - **Chemical_Formula**: Add the materials (chemical compositions) for which you wish to predict the critical temperature ($T_c$).
+    - **Temp-critical**: If known, you may enter the experimental $T_c$ here for comparison. Otherwise, you may leave it blank.
+      
+    - Follow the formatting rules illustrated in the reference image provided in the repository to ensure your chemical composition input is valid.
 
     <div align="center">
         <img src="Chemical_Composition_Rules.png" width="850">
     </div>
-
-  - The following columns can be handled as described:
-
-    - **Material-ID**: This is for user reference and identification. It is not auto-filled by the code, so you may enter any identifier (e.g., Unique Identification number, Sample name).
-
-    - **Temp-critical**: If known, you may enter the experimental $T_c$ here for comparison. Otherwise, you may leave it blank.
 
 
 - Generating Descriptors based on Quantum Structural Diagrams
