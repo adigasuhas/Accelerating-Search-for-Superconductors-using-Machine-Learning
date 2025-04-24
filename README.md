@@ -34,24 +34,46 @@ This repository contains code used for my project: *Machine Learning-based Criti
     ```bash
     cd Accelarating-Search-for-Superconductors-using-Machine-Learning/Temp_Predictor/
 
-- Preparing the Input File
+## Preparing the Input File
 
-    - Open the file named `Temp_prediction_materials.csv`.
-    - The following columns can be handled as described:
+- Open the file named `Temp_prediction_materials.csv`.
+- The following columns can be handled as described:
 
-        - `Material-ID` (_Optional_): This is for user reference and identification. It is not auto-filled by the code, so you may enter any identifier (e.g., Unique Identification number, Sample name).
-        - `Chemical_Formula`: Add the materials (chemical compositions) for which you wish to predict the critical temperature ($T_c$).
-        - `Temp_critical`(_Optional_): If known, you may enter the experimental $T_c$ here for comparison. Otherwise, you may leave it blank.
+    - `Material-ID` (_Optional_): This is for user reference and identification. It is not auto-filled by the code, so you may enter any identifier (e.g., Unique Identification number, Sample name).
+    - `Chemical_Formula`: Add the materials (chemical compositions) for which you wish to predict the critical temperature ($T_c$).
+    - `Temp_critical`(_Optional_): If known, you may enter the experimental $T_c$ here for comparison. Otherwise, you may leave it blank.
       
-    - Follow the formatting rules illustrated in the reference image provided in the repository to ensure your chemical composition input is valid.
+- Follow the formatting rules illustrated in the reference image provided in the repository to ensure your chemical composition input is valid.
 
     <div align="center">
         <img src="/Other_Files/Chemical_Composition_Rules.png" width="850">
     </div>
 
+## Compound Similarity Check
 
-- Generating Descriptors based on Quantum Structural Diagrams
+- After entering the `Chemical_Formula` into `Material_prediction.csv`, you can check if the compound is present in the `SuperCon-MTG` dataset by running the following command. A warning will be displayed, and if the compound is found, its corresponding material ID and critical temperature will be shown.
 
-- Predicting critical temperature of materials
+    ```bash
+    cd Temp_Predictor
+    python3 Compound_Matcher.py
+    ```
 
-   
+## Generating Descriptors and Critical Temperature Prediction
+
+- Once you have validated that the compound is not present in the `SuperCon-MTG` dataset, you can proceed to generate descriptors for $T_c$ prediction. To do this, simply run the `Predict.sh` script, which will generate the descriptors and predict $T_c$ using both the 30-feature and 5-feature models. 
+
+    If the script does not have execute permissions, you can grant them using the following command (skip if already granted):
+
+    ```bash
+    chmod +700 Predict.sh
+    ./Predict.sh
+    ```
+
+- Upon successful execution, a `Material_prediction_results.csv` file will be generated inside the `Temp_Predictor` folder. This file will contain the following columns:
+  - `Material-ID`
+  - `Chemical_Formula`
+  - `Temp_critical`
+  - `Predicted_class`
+  - `Predicted_Temp_critical_30_Features`
+  - `Predicted_Temp_critical_5_Features`
+
