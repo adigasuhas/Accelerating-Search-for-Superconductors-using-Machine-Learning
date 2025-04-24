@@ -85,7 +85,7 @@ This work has been made possible due to the insights and datasets provided by th
    - Center for Basic Research on Materials. *MDR SuperCon Datasheet Ver.240322*. National Institute for Materials Science, 2024. [DOI: 10.48505/NIMS.4487](https://mdr.nims.go.jp/pid/650c4826-f0ca-42e8-8dd9-94025a5307ce)
 
 2. **Descriptors**:
-   - Rabe, K. M., Phillips, J. C., Villars, P., & Brown, I. D. (1992). *Global multinary structural chemistry of stable quasicrystals, high-\(T_C\) ferroelectrics, and high-\(T_C\) superconductors*. Phys. Rev. B, 45(14), 7650–7676. [DOI: 10.1103/PhysRevB.45.7650](https://link.aps.org/doi/10.1103/PhysRevB.45.7650)
+   - Rabe, K. M., Phillips, J. C., Villars, P., & Brown, I. D. (1992). *Global multinary structural chemistry of stable quasicrystals, high-$(T_c)$ ferroelectrics, and high-$(T_c)$ superconductors*. Phys. Rev. B, 45(14), 7650–7676. [DOI: 10.1103/PhysRevB.45.7650](https://link.aps.org/doi/10.1103/PhysRevB.45.7650)
 
 3. **Composition Generation**:
    - Davies, D., Butler, K., Jackson, A., Skelton, J., Morita, K., & Walsh, A. (2019). *SMACT: Semiconducting Materials by Analogy and Chemical Theory*. Journal of Open Source Software, 4(38), 1361. [DOI: 10.21105/joss.01361](http://dx.doi.org/10.21105/joss.01361)
