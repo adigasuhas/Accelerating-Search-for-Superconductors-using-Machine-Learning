@@ -17,7 +17,20 @@ from qsd_params import valency, electronegativity, orbital_radius, unpaired_elec
 
 # Loading the 'SuperCon-MTG' database along or user can provided CSV filesfor descriptor generation outside the database. 
 
-data = pd.read_csv('Predict_compounds.csv')
+data = pd.read_csv('../Temp_Predictor/Material_prediction.csv')
+
+print(
+    "\033[1;36m"
+    "╔════════════════════════════════════════════════════════╗\n"
+    "║                                                        ║\n"
+    "║   \033[1;33mA C C E L E R A T I N G   S E A R C H   F O R\033[1;36m        ║\n"
+    "║   \033[1;33mS U P E R C O N D U C T O R S   U S I N G\033[1;36m            ║\n"
+    "║   \033[1;33mM A C H I N E   L E A R N I N G\033[1;36m                      ║\n"
+    "║                                                        ║\n"
+    "╚════════════════════════════════════════════════════════╝\n"
+    " \033[1;32mBy Suhas Adiga, Ram Seshadri, and Umesh Waghmare\033[0m\n"
+)
+
 
 # Creating list of metals and non-metals 
 # Note: Metalloids are considered as non-metals
@@ -102,8 +115,8 @@ def get_composition(row):
 
 # Normalizing the composition in the input data file 
 
-for compound in data['Chemical_Formula']:
-    print(normalized_counts(split_elements_with_composition(compound)))    
+#for compound in data['Chemical_Formula']:
+#    print(normalized_counts(split_elements_with_composition(compound)))    
 
 # index_2 dynamically creates columns with element names as headers.  
 for index_1, compound in enumerate(data['Chemical_Formula']):
@@ -340,10 +353,9 @@ qsd_features = pd.DataFrame(index = data.index)
 
 # Adding each statistical feature as a column 
 # a] Electronegativity related features 
-
-print('************************************************************')
-print('Generating statistical features related to Electronegativity')
-print('************************************************************')
+print("╔══════════════════════════════════════════════════╗")
+print("║           FEATURE GENERATION SUMMARY             ║")
+print("╚══════════════════════════════════════════════════╝")
 
 stat_features['Average electronegativity'] = compositions.apply(lambda comp: calculate_electronegativity_features(comp, 'average'))
 stat_features['Median electronegativity'] = compositions.apply(lambda comp: calculate_electronegativity_features(comp, 'median'))
@@ -354,10 +366,9 @@ stat_features['Standard deviation electronegativity'] = compositions.apply(lambd
 #stat_features['Variance electronegativity'] = compositions.apply(lambda comp:calculate_electronegativity_features(comp, 'variance'))
 stat_features['Average deviation electronegativity'] = compositions.apply(lambda comp: calculate_electronegativity_features(comp, 'avg_dev'))
 
-# b] Orbital Radius related features 
+print("\n🔹Statistical features related to Electronegativity           ✓ Generated")
 
-print('Generating statistical features related to Orbital Radius')
-print('************************************************************')
+# b] Orbital Radius related features 
 
 stat_features['Average orbital radius'] = compositions.apply(lambda comp: calculate_orbital_radius_features(comp, 'average'))
 stat_features['Median orbital radius'] = compositions.apply(lambda comp: calculate_orbital_radius_features(comp, 'median'))
@@ -368,10 +379,9 @@ stat_features['Standard deviation orbital radius'] = compositions.apply(lambda c
 #stat_features['Variance orbital radius'] = compositions.apply(lambda comp:calculate_orbital_radius_features(comp, 'variance'))
 stat_features['Average deviation orbital radius'] = compositions.apply(lambda comp: calculate_orbital_radius_features(comp, 'avg_dev'))
 
-# c] Unpaired electron number  
+print("\n🔹Statistical features related to Orbital Radius              ✓ Generated")
 
-print('Generating statistical features related to Unpaired electron number')
-print('************************************************************')
+# c] Unpaired electron number  
 
 stat_features['Median unpaired electron number'] = compositions.apply(lambda comp: calculate_unpaired_e_no_features(comp, 'median'))
 stat_features['Maxima unpaired electron number'] = compositions.apply(lambda comp:calculate_unpaired_e_no_features(comp, 'maxima'))
@@ -381,10 +391,9 @@ stat_features['Standard deviation unpaired electron number'] = compositions.appl
 #stat_features['Variance unpaired electron number'] = compositions.apply(lambda comp:calculate_unpaired_e_no_features(comp, 'variance'))
 stat_features['Average deviation unpaired electron number'] = compositions.apply(lambda comp: calculate_unpaired_e_no_features(comp, 'avg_dev'))
 
-# d] Valence electron number  
+print("\n🔹Statistical features related to Unpaired electron number    ✓ Generated")
 
-print('Generating statistical features related to Valence electron number')
-print('************************************************************')
+# d] Valence electron number  
 
 stat_features['Median valence electron number'] = compositions.apply(lambda comp: calculate_valence_e_no_features(comp, 'median'))
 stat_features['Maxima valence electron number'] = compositions.apply(lambda comp:calculate_valence_e_no_features(comp, 'maxima'))
@@ -394,10 +403,8 @@ stat_features['Standard deviation valence electron number'] = compositions.apply
 #stat_features['Variance unpaired electron number'] = compositions.apply(lambda comp:calculate_valence_e_no_features(comp, 'variance'))
 stat_features['Average deviation valence electron number'] = compositions.apply(lambda comp: calculate_valence_e_no_features(comp, 'avg_dev'))
 
-print('Generating Quantum Structure Diagram Descriptors')
-print('************************************************************')
+print("\n🔹Statistical features related to Valence electron number     ✓ Generated")
 
-# Calc
 
 # Adds weighted average of metalic electronegativity difference as a column in the output
 qsd_features['Weighted_avg_en_diff'] = data_metal.apply(weighted_average_metallic_electronegativity_difference, axis = 1)
@@ -411,6 +418,8 @@ qsd_features['Weighted_avg_unpaired_e_no'] = data.apply(weighted_average_unpaire
 # Adds weighted average of valence electron number as a column in the output
 qsd_features['Weighted_avg_valence_no'] = data.apply(weighted_average_valence_e_no, axis = 1)
 
+print("\n🔹Quantum Structural Diagram based descriptors                ✓ Generated")
+
 # Removes columns that contain element-wise composition data 
 data_reduced = data[['Material-ID', 'Chemical_Formula', 'Temp_critical']]
 
@@ -418,4 +427,4 @@ data_reduced = data[['Material-ID', 'Chemical_Formula', 'Temp_critical']]
 # Exporting the generated features and descriptors as CSV
 features = pd.concat([data_reduced, stat_features, qsd_features], axis=1)
 
-features.to_csv('Predict_compounds_desc.csv', index=False)
+features.to_csv('Material_prediction_desc.csv', index=False)

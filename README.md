@@ -1,7 +1,7 @@
 # Accelerating-Search-of-Superconductors
 
 <div align="center">
-    <img src="Comp_SC_1.png" width="250">
+    <img src="/Other_Files/Comp_SC_1.png" width="250">
 </div>
 
 
@@ -46,7 +46,7 @@ This repository contains code used for my project: *Machine Learning-based Criti
     - Follow the formatting rules illustrated in the reference image provided in the repository to ensure your chemical composition input is valid.
 
     <div align="center">
-        <img src="Chemical_Composition_Rules.png" width="850">
+        <img src="/Other_Files/Chemical_Composition_Rules.png" width="850">
     </div>
 
 
