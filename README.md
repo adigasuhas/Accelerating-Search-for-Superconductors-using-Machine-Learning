@@ -26,7 +26,7 @@ This repository contains code used for my project: *Machine Learning-based Criti
 - Clone this repository to your local machine.
 
   ```bash
-  git clone https://github.com/adigasuhas/Accelarating-Search-for-Superconductors-using-Machine-Learning.git
+  git clone https://github.com/adigasuhas/Accelerating-Search-for-Superconductors-using-Machine-Learning.git
   
 - Navigate to the Code Directory
   Change into the working directory where the Tc prediction scripts are located:
