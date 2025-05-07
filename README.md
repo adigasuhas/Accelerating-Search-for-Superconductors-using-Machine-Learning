@@ -32,7 +32,7 @@ This repository contains code used for my project: *Machine Learning-based Criti
   Change into the working directory where the Tc prediction scripts are located:
 
     ```bash
-    cd Accelarating-Search-for-Superconductors-using-Machine-Learning/Temp_Predictor/
+    cd Accelerating-Search-for-Superconductors-using-Machine-Learning/Temp_Predictor/
 
 ## Preparing the Input File
 
