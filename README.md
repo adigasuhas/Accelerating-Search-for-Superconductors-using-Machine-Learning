@@ -36,7 +36,7 @@ This repository contains code used for my project: *Machine Learning-based Criti
 
 ## Preparing the Input File
 
-- Open the file named `Temp_prediction_materials.csv`.
+- Open the file named `Material_prediction.csv`.
 - The following columns can be handled as described:
 
     - `Material-ID` (_Optional_): This is for user reference and identification. It is not auto-filled by the code, so you may enter any identifier (e.g., Unique Identification number, Sample name).
