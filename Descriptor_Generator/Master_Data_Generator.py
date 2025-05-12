@@ -28,7 +28,7 @@ print(
     "║   \033[1;33mM A C H I N E   L E A R N I N G\033[1;36m                      ║\n"
     "║                                                        ║\n"
     "╚════════════════════════════════════════════════════════╝\n"
-    " \033[1;32mBy Suhas Adiga, Ram Seshadri, and Umesh Waghmare\033[0m\n"
+    " \033[1;32mBy Suhas Adiga and Umesh V. Waghmare\033[0m\n"
 )
 
 

@@ -58,7 +58,7 @@ This repository contains code used for my project: *Machine Learning-based Criti
     python3 Compound_Matcher.py
     ```
     <div align="center">
-        <img src="/Other_Files/Comp_match_warning.png" width="850">
+        <img src="/Other_Files/Comp_match_warning.png" width="450">
     </div>
 
 

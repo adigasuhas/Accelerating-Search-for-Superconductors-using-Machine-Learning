@@ -55,7 +55,7 @@ data_predict_nsc = data_predict[data_predict['Predicted_Superconductor'] == 'Non
 # DataFrame with 30 descriptors for predicted superconductors
 print("\n Model 1: Full Feature Set")
 print("   • Descriptors: 30")
-print("   • Task: Predict Tc")
+print("   • Task: Tc Prediction")
 
 data_predict_sc_r = data_predict_sc[['Average electronegativity', 'Median electronegativity','Maxima electronegativity', 'Minima electronegativity', 'Range electronegativity', 'Standard deviation electronegativity', 'Average deviation electronegativity', 'Average orbital radius', 'Median orbital radius', 'Maxima orbital radius', 'Minima orbital radius', 'Range orbital radius', 'Standard deviation orbital radius', 'Average deviation orbital radius', 'Median unpaired electron number', 'Maxima unpaired electron number', 'Minima unpaired electron number', 'Range unpaired electron number', 'Standard deviation unpaired electron number', 'Average deviation unpaired electron number', 'Median valence electron number', 'Maxima valence electron number', 'Minima valence electron number', 'Range valence electron number', 'Standard deviation valence electron number', 'Average deviation valence electron number', 'Weighted_avg_en_diff', 'Weighted_avg_orbital_radius_diff', 'Weighted_avg_unpaired_e_no', 'Weighted_avg_valence_no']]
 
@@ -67,7 +67,7 @@ data_predict_nsc['Predicted_Temp_critical_30_Features'] = 0
 
 print("\n Model 2: Reduced Feature Set")
 print("   • Descriptors: 5")
-print("   • Task: Predict Tc")
+print("   • Task: Tc Prediction")
 
 # Dataframe of 5 key-features identified using SHAP
 data_predict_sc_r_5 = data_predict_sc[['Maxima orbital radius', 'Median electronegativity','Median unpaired electron number', 'Weighted_avg_unpaired_e_no','Median orbital radius' ]]
