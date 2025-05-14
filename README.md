@@ -19,7 +19,7 @@ This repository contains code used for my project: *Machine Learning-based Criti
 - **Python 3.10+** is required. You can check your Python version using:
 
   ```bash
-  python --version
+  python3 --version
 
 ## Usage
 
@@ -30,6 +30,8 @@ This repository contains code used for my project: *Machine Learning-based Criti
   ```
 
 - Download the trained models from Google Drive: [Click Here](https://drive.google.com/drive/folders/18K2BYny9yomTUyySdaZeJ_XK9qTRr3u4?usp=drive_link)
+
+- Ensure to rename the unzipped folder as `Machine_Learning_Models`.
 
 - Move the `Machine_Learning_Models` folder to the cloned repository:
 
