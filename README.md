@@ -23,17 +23,25 @@ This repository contains code used for my project: *Machine Learning-based Criti
 
 ## Usage
 
-- Clone this repository to your local machine.
+- Clone this repository to your local machine:
 
   ```bash
   git clone https://github.com/adigasuhas/Accelerating-Search-for-Superconductors-using-Machine-Learning.git
-  
-- Navigate to the Code Directory
-  Change into the working directory where the Tc prediction scripts are located:
+  ```
 
-    ```bash
-    cd Accelerating-Search-for-Superconductors-using-Machine-Learning/Temp_Predictor/
+- Download the trained models from Google Drive: [Click Here](https://drive.google.com/drive/folders/18K2BYny9yomTUyySdaZeJ_XK9qTRr3u4?usp=drive_link)
 
+- Move the `Machine_Learning_Models` folder to the cloned repository:
+
+  ```bash
+  mv Machine_Learning_Models Accelerating-Search-for-Superconductors-using-Machine-Learning/
+  ```
+
+- Navigate to the code directory where the Tc prediction scripts are located:
+
+  ```bash
+  cd Accelerating-Search-for-Superconductors-using-Machine-Learning/Temp_Predictor/
+  ```
 ## Preparing the Input File
 
 - Open the file named `Material_prediction.csv`.
