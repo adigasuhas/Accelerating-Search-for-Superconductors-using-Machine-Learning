@@ -111,5 +111,3 @@ This work has been made possible due to the insights and datasets provided by th
 
 If you'd like to cite this work, please refer to the following:
 
-[Your Name(s)], *Machine Learning-Based Superconductivity Prediction Using Descriptor-Based Models*, 2025. [DOI or URL if available].
-
