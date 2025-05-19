@@ -1,4 +1,4 @@
-# Accelerating-Search-of-Superconductors
+# Accelerating Search for Superconductors using Machine Learning
 
 <div align="center">
     <img src="/Other_Files/Comp_SC_1.png" width="250">
@@ -12,7 +12,7 @@
 
 ## Description
 
-This repository contains code used for my project: *Machine Learning-based Critical Temperature Predictions in Superconductors*. 
+This repository contains code used for my project: *Accelerating Search for Superconductors using Machine Learning*. 
 
 ## Requirements
 
@@ -109,5 +109,4 @@ This work has been made possible due to the insights and datasets provided by th
 
 ## Our Work
 
-If you'd like to cite this work, please refer to the following:
-
+This work is currently under process of submission on arXiV. So stay tuned for an update on the citation.
