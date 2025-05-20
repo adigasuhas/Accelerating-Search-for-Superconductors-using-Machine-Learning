@@ -108,11 +108,15 @@ This work has been made possible due to the insights and datasets provided by th
    - Stanev, V., Oses, C., Kusne, A. G., Rodriguez, E., Paglione, J., Curtarolo, S., & Takeuchi, I. (2018). *Machine learning modeling of superconducting critical temperature*. npj Computational Materials, 4(1). [DOI: 10.1038/s41524-018-0085-8](http://dx.doi.org/10.1038/s41524-018-0085-8)
 
 ## Our Work
-
+If you'd like to cite our work. 
 ```
-@article{Adiga2025,
-  title  = "Accelerating the Search for Superconductors Using Machine Learning",
-  author = "Adiga, S and Waghmare, U V",
-  year   =  2025
+@misc{Adiga2025,
+      title={Accelerating the Search for Superconductors Using Machine Learning}, 
+      author={Suhas Adiga and Umesh V. Waghmare},
+      year={2025},
+      eprint={2505.11964},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.supr-con},
+      url={https://arxiv.org/abs/2505.11964}, 
 }
 ```
