@@ -110,10 +110,9 @@ This work has been made possible due to the insights and datasets provided by th
 ## Our Work
 
 ```
-@article{Adiga2025-dt,
+@article{Adiga2025,
   title  = "Accelerating the Search for Superconductors Using Machine Learning",
   author = "Adiga, S and Waghmare, U V",
   year   =  2025
 }
-
 ```
