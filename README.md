@@ -6,7 +6,7 @@
 
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/release/python-310/)
-[![Paper](https://img.shields.io/badge/paper-arXiv-blue)](https://arxiv.org/abs/your-paper-id)
+[![Paper](https://img.shields.io/badge/paper-arXiv-blue)](https://arxiv.org/abs/2505.11964v1)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)  
 ![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)  
 
