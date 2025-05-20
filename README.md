@@ -109,4 +109,11 @@ This work has been made possible due to the insights and datasets provided by th
 
 ## Our Work
 
-This work is currently under process of submission on arXiV. So stay tuned for an update on the citation.
+```
+@article{Adiga2025-dt,
+  title  = "Accelerating the Search for Superconductors Using Machine Learning",
+  author = "Adiga, S and Waghmare, U V",
+  year   =  2025
+}
+
+```
