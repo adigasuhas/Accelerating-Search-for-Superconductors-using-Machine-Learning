@@ -1,7 +1,7 @@
 # Accelerating Search for Superconductors using Machine Learning
 
 <div align="center">
-    <img src="/Other_Files/TOC.png" width="250">
+    <img src="/Other_Files/TOC.png" width="500">
 </div>
 
 
